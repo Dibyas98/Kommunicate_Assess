@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 60%;
+    height: 60%;
+    border-left: 3px solid black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    
+}
+.round-cont{
+    width: 80%;
+    height: 60%;
+    border: 4px solid rgba(168, 164, 164, 0.325);
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-div{
+    /* background-color: aqua; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+.text{
+    width: 100%;
+    font-size: clamp(0.8rem, 2vw, 2rem);
+    text-wrap: wrap;
+    height: auto;
+}
+.e-com-text {
+    font-size: clamp(0.8rem, 2vw, 2rem); /* Adjust the values as needed */
+    color: #5553b7;
+    padding-bottom: 1rem;
+}
+
+.round-cont-left{
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    background-color: rgba(162, 162, 226, 0.5);
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 20px;
+    left: 50%;
+    filter: blur(1px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(15px);
+}
+.btn{
+    padding:0.7rem;
+    height: 36px;
+    border-radius: 20px;
+    background-color: #2dd35c;
+    border: none;
+    color: white;
+    font-weight: 600;
+
+}
+.btn-div{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.demo{
+    background-color: transparent;
+    border: 2px solid rgb(128, 128, 247);
+    color: rgb(128, 128, 247);
+}
+
+@media screen and (max-width:480px) {
+    .round-cont{
+        align-items: start;
+    }
+}
